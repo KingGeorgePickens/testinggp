@@ -64,21 +64,22 @@ body {
 }
 
 .announcements {
-  max-width: 500px;
+  max-width: 750px;
 }
 
 .announcements h2 {
-  font-size: 40px;
+  font-size: 60px;
 }
 
 .announcements p {
   color: #ffffff;
-  font-size: 28px;
+  font-size: 45px;
 }
 
 .highlight {
   font-weight: bold;
-  color: white;
+  border: 0.5px solid #FFB612;
+  color: rgb(255, 255, 255);
 }
 
 .game-grid {
