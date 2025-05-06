@@ -87,7 +87,11 @@ gap: 20px;
         <p><span class="highlight">Updates</span>: All games currenty work,if not, please fill out a bug report.  </p>
         <p>Home page is also outdated, will be updated in the near future</p>
 </div>
+</div>
+<div class="featuredupdates">
 
+</div>
+</div>
 
 <script>
 function searchGameCards() {
@@ -99,6 +103,15 @@ gamecards.forEach(card => {
 const text = card.textContent.toLowerCase();
 card.style.display = text.includes(filter) ? 'block' : 'none';
 });
+}
+
+function shuffleGameCards() {
+const container = document.getElementById('gamecards-container');
+const cards = Array.from(container.children);
+for (let i = cards.length - 1; i > 0; i--) {
+const j = Math.floor(Math.random() * (i + 1));
+container.appendChild(cards[j]);
+}
 }
 
 document.addEventListener('DOMContentLoaded', shuffleGameCards);
